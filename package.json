@@ -16,5 +16,19 @@
   "bugs": {
     "url": "https://github.com/kis0421/shopping-cart/issues"
   },
-  "homepage": "https://github.com/kis0421/shopping-cart#readme"
+  "homepage": "https://github.com/kis0421/shopping-cart#readme",
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "typescript": "^4.7.3",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0"
+  }
 }
