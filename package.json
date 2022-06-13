@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/kis0421/shopping-cart#readme",
   "dependencies": {
+    "@babel/preset-react": "^7.17.12",
     "@emotion/react": "^11.9.3",
     "@emotion/styled": "^11.9.3",
     "@mui/material": "^5.8.3",
@@ -25,10 +26,14 @@
     "react-dom": "^18.1.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
     "@types/react": "^18.0.12",
     "@types/react-dom": "^18.0.5",
+    "babel-loader": "^8.2.5",
     "typescript": "^4.7.3",
     "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.2"
   }
 }
