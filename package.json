@@ -1,0 +1,20 @@
+{
+  "name": "shopping-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kis0421/shopping-cart.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kis0421/shopping-cart/issues"
+  },
+  "homepage": "https://github.com/kis0421/shopping-cart#readme"
+}
