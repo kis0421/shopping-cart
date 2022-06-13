@@ -1,7 +1,9 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
-  mode: "development",
   entry: "./src/index.tsx",
+  devServer:{
+    port:3000,
+  },
   module: {
     rules: [
       {
@@ -11,20 +13,12 @@ module.exports = {
           loader: "babel-loader",
         }
       },
-      // {
-      //   test: /\..html$/,
-      //   use: [
-      //     {
-      //       loader: "html-loader",
-      //       options: {
-      //         minimize: true,
-      //       }
-      //     }
-      //   ]
-      // }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "index.html" })
   ],
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"],
+  },
 }
