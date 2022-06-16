@@ -1,15 +1,36 @@
-import { css } from "@emotion/react";
 import { QueryClient, QueryClientProvider } from "react-query"
 
-const appStyle = css`
-  font-size:12px;
-`;
+import { css } from "@emotion/react";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const queryClient = new QueryClient()
+import Header from "./components/Header";
+
+const queryClient = new QueryClient();
+const appStyle = css`
+  font-size:16px;
+`;
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: "#7befb2"
+    }
+  }
+});
+
+const App = () => {
+  return (
+    <div css={appStyle}>
+      <Header />
+    </div>
+  )
+}
+
 export default () => {
   return (
     <QueryClientProvider client={queryClient}>
-      <div css={appStyle}>init</div>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
     </QueryClientProvider>
   )
 }
