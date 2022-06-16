@@ -28,9 +28,12 @@ const theme = createTheme({
 
 const App = () => {
   return (
-    <div css={appStyle}>
-      <Header />
-    </div>
+    <BrowserRouter>
+      <div css={appStyle}>
+        <Header />
+        <Routes />
+      </div>
+    </BrowserRouter>
   )
 }
 
