@@ -7,7 +7,13 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Header from "./components/Header";
 import Routes from "./Routes";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false
+    }
+  }
+});
 const appStyle = css`
   font-size:16px;
   a{
