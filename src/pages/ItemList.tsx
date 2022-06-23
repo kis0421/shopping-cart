@@ -15,7 +15,7 @@ export default memo(() => {
     });
     return res;
   }, []);
-  const { data } = useQuery("getProduct2s", getProducts, { suspense: true })
+  const { data } = useQuery(["getProducts"], getProducts, { suspense: true })
 
   return (
     <div>
