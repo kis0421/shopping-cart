@@ -16,7 +16,7 @@ export default memo(() => {
     return res;
   }, []);
   const { data } = useQuery(["getProducts"], getProducts, { suspense: true })
-
+  //TODO: 예외처리 해야함
   return (
     <div>
       {data.data.product.map((product) => (
