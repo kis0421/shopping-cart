@@ -5,7 +5,7 @@ import axios from "axios";
 const secretKey = process.env.SECRETKEY as string;
 
 export default memo(() => {
-  const getProducts = useCallback(async () => {
+  const getProducts = useCallback(() => {
     const res = axios({
       method: "GET",
       url: "https://shopping-basket.hasura.app/api/rest/products",
