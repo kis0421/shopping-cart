@@ -15,18 +15,20 @@ export default memo(() => {
     });
     return res;
   }, []);
-  const { data } = useQuery(["getProducts"], getProducts, { suspense: true })
+  const { data, isLoading } = useQuery(["getProducts"], getProducts, { suspense: true })
 
   if (!data) {
     return null;
   }
   return (
     <div>
-      {data.data.product.map((product) => (
-        <div key={product.idx}>
-          <span>{product.product_name}</span>
-        </div>
-      ))}
+      {isLoading
+        ? <>loading</>
+        : data.data.product.map((product) => (
+          <div key={product.idx}>
+            <span>{product.product_name}</span>
+          </div>
+        ))}
     </div>
   )
 })
