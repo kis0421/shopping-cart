@@ -1,7 +1,11 @@
 import { memo } from "react";
 
-export default memo(() => {
+import { InterfaceItem } from "../types"
+
+export default memo((props: InterfaceItem) => {
   return (
-    <div>Item</div>
+    <div>
+      <span>{props.product_name}</span>
+    </div>
   )
 })
