@@ -11,6 +11,7 @@ const instance = axios.create({
   }
 })
 
+// TODO: 현재는 get만 사용하지만 차후 method도 전달 받도록 바꿔야함 
 export const requestHandler = async (endpoint: string) => {
   try {
     const { data } = await instance.get(endpoint);
