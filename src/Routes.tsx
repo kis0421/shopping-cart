@@ -13,6 +13,7 @@ export default memo(() => {
           <Route path="/" element={<ItemList />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/detail" />
+          <Route path="*"  element={<>404</>}/>
         </Routes>
       </Suspense>
     </div>
