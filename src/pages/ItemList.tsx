@@ -13,7 +13,7 @@ export default memo(() => {
   if (!data) {
     return null;
   }
-  console.log(data.product)
+  
   return (
     <div>
       {isLoading
